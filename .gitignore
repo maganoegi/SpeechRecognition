@@ -2,3 +2,4 @@ venv/
 codebook/
 .idea/
 *.wav
+__pycache__
