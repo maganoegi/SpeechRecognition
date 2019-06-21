@@ -1,0 +1,4 @@
+venv/
+codebook/
+.idea/
+*.wav
