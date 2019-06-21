@@ -14,7 +14,7 @@ import preprocessing
 
 
 # ==============================================================
-#       Sound Sampler Initialization
+#       Sound Recorder/Sampler Initialization
 # ==============================================================
 bar_format = '{l_bar}{bar}| {n_fmt}/{total_fmt}'
 sd.default.samplerate = 8000
