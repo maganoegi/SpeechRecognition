@@ -115,38 +115,41 @@ mfcc3 = MFCC(third)
 #       Visualisation Results
 # ==============================================================
 plt.figure()
-# total_cost = 0.0
-# cost = 0.0
-# cnt = 0
-# for i in range(16):
-#     if i < 10 or i == 12 or i == 13:
-#         plt.subplot(4, 4, i + 1)
-#         plt.plot(mfcc1[cnt], 'b-')
-#         plt.plot(mfcc2[cnt], 'g-')
-#         cost = dtw(mfcc1[cnt], mfcc2[cnt])
-#         plt.title('cost: ' + ("%.1f" % cost))
-#         total_cost += cost
-#         plt.legend().remove()
-#         cnt += 1
-#
-# plt.subplot(4, 4, 11)
-# plt.plot(filename1, 'b')
-# plt.axvline(start1, color='r')
-# plt.axvline(end1, color='r')
-# plt.axvline(15000, color='g')
-# plt.axvline(1000, color='g')
-# plt.subplot(4, 4, 12)
-# plt.plot(filename2, 'b')
-# plt.axvline(start2, color='r')
-# plt.axvline(end2, color='r')
-# plt.axvline(15000, color='g')
-# plt.axvline(1000, color='g')
-# plt.subplot(4, 4, 15)
-# fff = numpy.concatenate([first, second])
-# plt.plot(first, 'b')
-# plt.subplot(4, 4, 16)
-# plt.plot(second, 'b')
+total_cost = 0.0
+cost = 0.0
+cnt = 0
+for i in range(16):
+    if i < 10 or i == 12 or i == 13:
+        plt.subplot(4, 4, i + 1)
+        plt.plot(mfcc1[cnt], 'b-')
+        plt.plot(mfcc2[cnt], 'g-')
+        cost = dtw(mfcc1[cnt], mfcc2[cnt])
+        plt.title('cost: ' + ("%.1f" % cost))
+        total_cost += cost
+        plt.legend().remove()
+        cnt += 1
 
+plt.subplot(4, 4, 11)
+plt.plot(filename1, 'b')
+plt.axvline(start1, color='r')
+plt.axvline(end1, color='r')
+plt.axvline(15000, color='g')
+plt.axvline(1000, color='g')
+plt.subplot(4, 4, 12)
+plt.plot(filename2, 'b')
+plt.axvline(start2, color='r')
+plt.axvline(end2, color='r')
+plt.axvline(15000, color='g')
+plt.axvline(1000, color='g')
+plt.subplot(4, 4, 15)
+fff = numpy.concatenate([first, second])
+plt.plot(first, 'b')
+plt.subplot(4, 4, 16)
+plt.plot(second, 'b')
+plt.show()
+
+
+plt.figure()
 plt.subplot(2, 4, 1)
 plt.plot(filename1, 'b')
 plt.axvline(start1, color='r')
