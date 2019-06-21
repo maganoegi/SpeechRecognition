@@ -23,7 +23,7 @@ sd.default.dtype='int16'
 duration = 2.0  # seconds
 
 # ==============================================================
-#       User Input
+#       User Input (Speech)
 # ==============================================================
 input("First Sample:")
 time.sleep(0.1)
